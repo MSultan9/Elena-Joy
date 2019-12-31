@@ -276,7 +276,7 @@ nav {
     transform: translate(-50%, -50%);
     color: white;
     background: var(--background-color);
-    padding: 5rem 10rem;
+    padding: 1.5rem 4rem;
     text-align: center;
 }
 
@@ -370,6 +370,7 @@ footer h4 {
         background: var(--gray-text);
         margin: 0.5rem 0;
         display: block;
+        cursor: pointer;
     }
 
     .nav-links {
@@ -381,6 +382,24 @@ footer h4 {
         left: 100%;
         flex-direction: column;
         align-items: center;
+    }
+
+    .nav-open {
+        transform: translateX(-100%);
+    }
+
+    .toggle .line1 {
+        transform: rotateZ(45deg) translateY(300%);
+        background: white;
+    }
+
+    .toggle .line2{
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotateZ(-45deg) translateY(-300%);
+        background: white;
     }
 
     .nav-links a {
